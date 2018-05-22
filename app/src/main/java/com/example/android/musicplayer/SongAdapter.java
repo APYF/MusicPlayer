@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class SongAdapter extends ArrayAdapter<Song> {
     /**
-     * This is a custom constructor.  The context is used to infalte the layout file, and the the
+     * This is a custom constructor.  The context is used to inflat the layout file, and the the
      * list is the data we want to populate into the list.
      *
      * @param context The current context. Used to inflate the layout file.
@@ -45,7 +45,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
             }
         });
 
-        ImageView songImageView = (ImageView) listItemView.findViewById(R.id.song_image);
+        ImageView songImageView = (ImageView) listItemView.findViewById(R.id.play_button);
         songImageView.setImageResource(R.drawable.ic_play);
 
         TextView songTextView = (TextView) listItemView.findViewById(R.id.song);
