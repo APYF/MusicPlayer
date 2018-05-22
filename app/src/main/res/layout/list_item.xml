@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="4dp"
-    android:paddingBottom="4dp">
+    android:paddingBottom="@dimen/activity_padding">
     <ImageView
         android:id="@+id/play_button"
         android:layout_width="wrap_content"
@@ -22,13 +22,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textIsSelectable="false"
-            android:textSize="18sp"
+            android:textSize="@dimen/song_name_size"
             android:textStyle="bold"
             tools:text="With or Without You" />
         <TextView
             android:id="@+id/artist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/artist_name_size"
             android:layout_weight="1"
             tools:text="U2" />
     </LinearLayout>

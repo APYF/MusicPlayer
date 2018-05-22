@@ -6,7 +6,8 @@ public class Song {
 
     /**
      * Create a new Song object.
-     * @param songName is the name of song
+     *
+     * @param songName   is the name of song
      * @param artistName is the name of the artist who performed the song
      */
     public Song(String songName, String artistName) {

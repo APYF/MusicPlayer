@@ -32,12 +32,14 @@ public class SongAdapter extends ArrayAdapter<Song> {
 
         final Song currentSong = getItem(position);
 
+        // On click of the list item, launch the SongDetailActivity
         listItemView.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent songDetailIntent = new Intent(view.getContext(), SongDetailActivity.class);
 
+                // pass the song name & artist name to the SongDetailActivity
                 songDetailIntent.putExtra("SONG", currentSong.getSongName());
                 songDetailIntent.putExtra("ARTIST", currentSong.getArtistName());
 

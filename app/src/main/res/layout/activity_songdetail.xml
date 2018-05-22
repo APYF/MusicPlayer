@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/detail"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/activity_horizontal_margin"
     android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
     tools:context="com.example.android.musicplayer.SongDetailActivity">
 
     <TextView
@@ -14,24 +13,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:textSize="18sp"
-        android:textStyle="bold"
         android:gravity="center_horizontal"
+        android:textSize="@dimen/song_name_size"
+        android:textStyle="bold"
         tools:text="With or Without You" />
+
     <TextView
         android:id="@+id/detail_artist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center_horizontal"
+        android:textSize="@dimen/artist_name_size"
         tools:text="U2" />
+
     <ImageView
         android:id="@+id/album_cover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="@dimen/activity_horizontal_margin"
-        tools:src="@drawable/androidmusicapps06"/>
+        tools:src="@drawable/androidmusicapps06" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
